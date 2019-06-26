@@ -1,0 +1,159 @@
+/* Written primarily for mobile! */
+/* Variables */
+:root {
+    --colour-1: rgb(23, 126, 139);
+    --colour-2: rgb(255,255,255);
+    --colour-3: rgb(247, 247, 247);
+    --colour-4: rgb(0,0,0);
+    --colour-5: rgb(28,28,28);
+}
+
+@font-face {
+    font-family: 'Primary';
+    src: url(../font/Zaio.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Secondary';
+    src: url(../font/Roboto-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h3, p, a {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0.25vw;
+    font-weight: 500;
+    letter-spacing: 0.035em;
+    word-spacing: 0.1em;
+    font-family: "Primary", Helvetica, Arial, sans-serif;
+    color: var(--colour-2);
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 0.25vw;
+    font-weight: 100;
+    letter-spacing: 0.035em;
+    word-spacing: 0.1em;
+    font-family: "Primary", Helvetica, Arial, sans-serif;
+    color: var(--colour-3);
+}
+
+h3 {
+    font-size: 1.75em;
+    padding: 0.25vw;
+    font-weight: 500;
+    letter-spacing: 0.035em;
+    word-spacing: 0.1em;
+    line-height: 150%;
+    font-family: "Primary", Helvetica, Arial, sans-serif;
+    color: var(--colour-1);
+}
+
+p {
+    font-size: 1em;
+    padding: 3vw 0.25vw;
+    font-weight: 500;
+    line-height: 180%;
+    text-indent: 1em;
+    font-family: "Secondary", Helvetica, Arial, sans-serif;
+    color: var(--colour-4);
+}
+
+a {
+    text-decoration: none;
+    color: var(--colour-1);
+}
+
+/* Containers */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cover */
+.cover-wrapper {
+    position: relative;
+    width: 100%;
+    background-image: url(../img/cover-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(30%);
+}
+
+.cover-filter {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.05));
+}
+
+.cover-container {
+    position: absolute;
+    left: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Main Body */
+.main-body {
+    width: 100%;
+    height: auto;
+    padding: 5vw 0;
+    position: relative;
+}
+
+.profile-pic {
+    width: 70vw;
+    margin: auto;
+}
+
+.text-container {
+    width: 90vw;
+    height: auto;
+    padding: 5vw;
+}
+
+.btn {
+    font-size: 1em;
+    padding: 0.8em;
+    font-weight: 500;
+    line-height: 180%;
+    text-indent: 0;
+    font-family: "Secondary", Helvetica, Arial, sans-serif;
+    color: var(--colour-1);
+    border: 1px solid var(--colour-1);
+    background-color: var(--colour-2);
+    transition-duration: 0.3s;
+    margin: 4vw 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--colour-2);
+    background-color: var(--colour-1);
+    border: 1px solid var(--colour-1);
+}
+
+.signature {
+    max-height: 3em;
+    max-width: 45vw;
+}
